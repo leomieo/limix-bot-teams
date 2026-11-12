@@ -11,9 +11,9 @@ Nhóm kỹ thuật sản phẩm cân bằng gồm 4 thành viên, đưa một th
 
 ## Kỹ năng đi kèm (Skills)
 
-- **architecture-decision:** Ghi lại quyết định kỹ thuật trọng tâm cùng bối cảnh, phương án thay thế và các đánh đổi.
-- **implementation-plan:** Chuyển đổi mục tiêu thành kế hoạch triển khai theo trình tự, có phân công và phương pháp xác minh rõ ràng.
-- **release-readiness:** Đánh giá mức độ sẵn sàng phát hành dựa trên bằng chứng, rủi ro, kế hoạch rollback và truyền thông.
+- **quyet-dinh-kien-truc (Quyết định kiến trúc):** Ghi lại quyết định kỹ thuật trọng tâm cùng bối cảnh, phương án thay thế và các đánh đổi.
+- **ke-hoach-trien-khai (Kế hoạch triển khai):** Chuyển đổi mục tiêu thành kế hoạch triển khai theo trình tự, có phân công và phương pháp xác minh rõ ràng.
+- **san-sang-phat-hanh (Sẵn sàng phát hành):** Đánh giá mức độ sẵn sàng phát hành dựa trên bằng chứng, rủi ro, kế hoạch rollback và truyền thông.
 
 ## Kết nối hữu ích
 

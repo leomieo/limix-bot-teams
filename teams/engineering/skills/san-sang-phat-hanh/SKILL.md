@@ -1,9 +1,9 @@
 ---
-name: release-readiness
+name: san-sang-phat-hanh
 description: Đánh giá xem một thay đổi đã sẵn sàng phát hành hay chưa dựa trên bằng chứng, rủi ro, kế hoạch khôi phục và truyền thông.
 ---
 
-# Sẵn sàng Phát hành (Release Readiness)
+# Sẵn sàng phát hành
 
 ## Khi nào sử dụng
 
@@ -18,10 +18,10 @@ Khi một thay đổi sắp được hợp nhất (merge), triển khai lên mô
 5. Xác nhận thứ tự triển khai, người phụ trách, đường dẫn khôi phục (rollback path) và các kiểm tra sau phát hành.
 6. Chuẩn bị ghi chú ngắn gọn hướng tới người dùng hoặc người bảo trì khi hành vi hệ thống có sự thay đổi.
 
-## Đầu ra
+## Kết quả đầu ra
 
-Đưa ra quyết định rõ ràng: Sẵn sàng (Ready), Sẵn sàng có điều kiện (Ready with conditions), hoặc Chưa sẵn sàng (Not ready); kèm theo bằng chứng, rủi ro mở, kế hoạch rollout, rollback, giám sát và truyền thông.
+Đưa ra quyết định rõ ràng: Sẵn sàng, Sẵn sàng có điều kiện, hoặc Chưa sẵn sàng; kèm theo bằng chứng, rủi ro mở, kế hoạch rollout, rollback, giám sát và truyền thông.
 
 ## Ranh giới an toàn
 
-Tuyệt đối không suy đoán là các bài kiểm tra đã đạt nếu chúng chưa thực sự được chạy. Một bộ kiểm thử tự động báo xanh (pass) không thể thay thế cho việc xác minh hành vi thực tế hoặc trải nghiệm đầu-cuối (end-to-end) quan trọng.
+Tuyệt đối không suy đoán là các bài kiểm tra đã đạt nếu chúng chưa thực sự được chạy. Một bộ kiểm thử tự động báo xanh không thể thay thế cho việc xác minh hành vi thực tế hoặc trải nghiệm đầu-cuối quan trọng.

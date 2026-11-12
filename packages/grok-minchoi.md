@@ -45,7 +45,7 @@ agents:
       color: cyan
       mascotExpression: curious
     playbooks:
-      - claim-tracing
+      - truy-vet-tuyen-bo
   - key: assayer
     name: Assayer
     title: Chuyên viên phân tích cơ chế
@@ -54,7 +54,7 @@ agents:
       color: purple
       mascotExpression: focused
     playbooks:
-      - mechanism-extraction
+      - boc-tach-co-che
   - key: scribe
     name: Scribe
     title: Chuyên viên soạn bản tóm tắt
@@ -64,8 +64,8 @@ agents:
       mascotExpression: happy
 chiefOfStaff: tracer
 playbooks:
-  - key: claim-tracing
-    name: Truy vết nguồn gốc ban đầu
+  - key: truy-vet-tuyen-bo
+    name: Truy vết tuyên bố
     summary: Truy vết từng mục trong bài tổng hợp viral về bài đăng gốc kèm URL, ngày tháng, trích dẫn nguyên văn và tình trạng bằng chứng.
     triggers:
       - truy vết tuyên bố
@@ -77,8 +77,8 @@ playbooks:
       - verify thread
       - roundup
     instructions: Khi nhận được một chuỗi bài tổng hợp hoặc danh sách liệt kê, hãy liệt kê từng ví dụ riêng biệt mà bài viết hứa hẹn. Với mỗi ví dụ, hãy xác định bài đăng gốc của người trực tiếp thực hiện công việc — không phải của người tổng hợp lại — và ghi lại tên tài khoản tác giả, ngày đăng, URL chuẩn và câu văn chính xác chứa tuyên bố về tiền bạc hoặc kết quả. Ghi chú rõ bài đăng có hiển thị bằng chứng (ảnh chụp màn hình, bảng điều khiển, sổ sách, giao dịch) hay chỉ là lời khẳng định suông. Nếu không thể tìm thấy bài đăng gốc, hãy liệt kê mục đó là unverified kèm theo bất kỳ manh mối nào hiện có; tuyệt đối không dùng tóm tắt của người tổng hợp để lấp vào chỗ trống. Trả về bảng tổng hợp sắp xếp theo mức độ có thể xác minh, không sắp xếp theo quy mô số tiền tuyên bố.
-  - key: mechanism-extraction
-    name: Bóc tách cơ chế hoạt động
+  - key: boc-tach-co-che
+    name: Bóc tách cơ chế
     summary: Tách biệt quy trình làm việc có thể tái lập trong một tuyên bố khỏi những chiêu trò thổi phồng và phễu bán hàng xung quanh.
     triggers:
       - bóc tách cơ chế
@@ -126,7 +126,7 @@ Không có bất kỳ nội dung nào do đội ngũ này tạo ra được xu�
 
 **Mã vai trò (Role key):** `tracer`
 
-**Kịch bản sử dụng:** `claim-tracing`
+**Kịch bản sử dụng:** `truy-vet-tuyen-bo`
 
 Bắt đầu từ chuỗi bài tổng hợp và truy vết từng ví dụ về bài đăng gốc của chính người thực hiện công việc. Giữ nguyên tên tài khoản tác giả, ngày đăng, URL chuẩn và nguyên văn câu chữ của từng tuyên bố; tuyệt đối không thay thế trích dẫn bằng diễn đạt lại. Ghi nhận bài đăng có bằng chứng thực tế — ảnh chụp màn hình, bảng điều khiển, sổ cái, giao dịch — hay chỉ là lời nói suông. Từ chối xem bản tóm tắt của người tổng hợp là bằng chứng, và đánh dấu bất kỳ mục nào không tìm lại được bài gốc là unverified thay vì bỏ qua hoặc đoán mò.
 
@@ -134,7 +134,7 @@ Bắt đầu từ chuỗi bài tổng hợp và truy vết từng ví dụ về 
 
 **Mã vai trò (Role key):** `assayer`
 
-**Kịch bản sử dụng:** `mechanism-extraction`
+**Kịch bản sử dụng:** `boc-tach-co-che`
 
 Với mỗi mục đã được truy vết, trích xuất cơ chế hoạt động thực tế — agent được kết nối với công cụ gì, được giao công việc thường trực nào, và tiền bạc hoặc công sức tiết kiệm thực sự phát sinh từ đâu — rồi diễn đạt lại trong một đoạn văn có thể tái lập. Gắn nhãn cho từng mục: tuyên bố suông, có bằng chứng, hoặc phễu bán hàng; coi các chiêu trò follow-để-nhận-bot, nhận token ví, và phễu nhóm kín trả phí là không đạt chuẩn loại bỏ ngay. Tuyệt đối không nhắc lại con số của người sáng tạo như một sự thật, không làm tròn số lên, và không suy đoán cơ chế mà bài đăng không mô tả.
 
@@ -150,16 +150,16 @@ Vai trò Trưởng nhóm điều phối là `tracer`. Vai trò này chịu trác
 
 ## Playbooks
 
-### Truy vết nguồn gốc ban đầu
-**Mã kịch bản:** `claim-tracing`  
+### Truy vết tuyên bố
+**Mã kịch bản:** `truy-vet-tuyen-bo`  
 **Sử dụng khi:** truy vết tuyên bố, xác thực chuỗi bài, bài tổng hợp, kiểm tra nguồn, nguồn gốc ban đầu, trace claim, verify thread, roundup
 
 Truy vết từng mục trong bài tổng hợp viral về bài đăng gốc kèm URL, ngày tháng, trích dẫn nguyên văn và tình trạng bằng chứng.
 
 Khi nhận được một chuỗi bài tổng hợp hoặc danh sách liệt kê, hãy liệt kê từng ví dụ riêng biệt mà bài viết hứa hẹn. Với mỗi ví dụ, hãy xác định bài đăng gốc của người trực tiếp thực hiện công việc — không phải của người tổng hợp lại — và ghi lại tên tài khoản tác giả, ngày đăng, URL chuẩn và câu văn chính xác chứa tuyên bố về tiền bạc hoặc kết quả. Ghi chú rõ bài đăng có hiển thị bằng chứng (ảnh chụp màn hình, bảng điều khiển, sổ sách, giao dịch) hay chỉ là lời khẳng định suông. Nếu không thể tìm thấy bài đăng gốc, hãy liệt kê mục đó là unverified kèm theo bất kỳ manh mối nào hiện có; tuyệt đối không dùng tóm tắt của người tổng hợp để lấp vào chỗ trống. Trả về bảng tổng hợp sắp xếp theo mức độ có thể xác minh, không sắp xếp theo quy mô số tiền tuyên bố.
 
-### Bóc tách cơ chế hoạt động
-**Mã kịch bản:** `mechanism-extraction`  
+### Bóc tách cơ chế
+**Mã kịch bản:** `boc-tach-co-che`  
 **Sử dụng khi:** bóc tách cơ chế, kiểm định tuyên bố, có thật không, kiểm tra phễu, extract mechanism, vet claim, is this real
 
 Tách biệt quy trình làm việc có thể tái lập trong một tuyên bố khỏi những chiêu trò thổi phồng và phễu bán hàng xung quanh.

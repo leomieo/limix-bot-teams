@@ -10,8 +10,8 @@ Nhóm 3 bot chuyên trách xác thực và kiểm chứng: tiếp nhận một c
 
 ## Kỹ năng đi kèm (Skills)
 
-- **claim-tracing:** Truy vết nguồn gốc ban đầu của các tuyên bố viral kèm URL, trích dẫn nguyên văn và bằng chứng thực tế.
-- **mechanism-extraction:** Bóc tách cơ chế hoạt động thực tế và loại bỏ các phễu bán hàng giả tạo.
+- **truy-vet-tuyen-bo (Truy vết tuyên bố):** Truy vết nguồn gốc ban đầu của các tuyên bố viral kèm URL, trích dẫn nguyên văn và bằng chứng thực tế.
+- **boc-tach-co-che (Bóc tách cơ chế):** Bóc tách cơ chế hoạt động thực tế và loại bỏ các phễu bán hàng giả tạo.
 
 ## Ứng dụng kết nối
 

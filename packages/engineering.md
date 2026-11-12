@@ -43,8 +43,8 @@ agents:
       color: purple
       mascotExpression: focused
     playbooks:
-      - architecture-decision
-      - implementation-plan
+      - quyet-dinh-kien-truc
+      - ke-hoach-trien-khai
   - key: lin
     name: Lin
     title: Kỹ sư Backend
@@ -53,8 +53,8 @@ agents:
       color: green
       mascotExpression: thinking
     playbooks:
-      - architecture-decision
-      - implementation-plan
+      - quyet-dinh-kien-truc
+      - ke-hoach-trien-khai
   - key: pixel
     name: Pixel
     title: Kỹ sư Frontend
@@ -63,7 +63,7 @@ agents:
       color: cyan
       mascotExpression: happy
     playbooks:
-      - implementation-plan
+      - ke-hoach-trien-khai
   - key: rigel
     name: Rigel
     title: Kỹ sư QA và Phát hành
@@ -72,7 +72,7 @@ agents:
       color: orange
       mascotExpression: curious
     playbooks:
-      - release-readiness
+      - san-sang-phat-hanh
 chiefOfStaff: ada
 rooms:
   - key: engineering-room
@@ -88,7 +88,7 @@ rooms:
       agent: ada
 routines: []
 playbooks:
-  - key: architecture-decision
+  - key: quyet-dinh-kien-truc
     name: Quyết định Kiến trúc
     summary: Ghi lại một quyết định kỹ thuật trọng tâm cùng bối cảnh, các phương án thay thế, đánh đổi và kế hoạch theo dõi.
     triggers:
@@ -101,7 +101,7 @@ playbooks:
       - tradeoff
       - design choice
     instructions: Sử dụng kịch bản này khi một lựa chọn triển khai quan trọng ảnh hưởng đến giao diện API, dữ liệu, bảo mật, vận hành, tính tương thích ngược hoặc công việc trong tương lai. Khảo sát hệ thống hiện có và nêu rõ mục tiêu người dùng hoặc vận hành đang được bảo vệ. Ghi lại các ràng buộc, dữ kiện đã biết, giả định và các mục tiêu ngoài phạm vi. So sánh hai hoặc ba phương án thực tế, bao gồm cả phương án giữ nguyên thiết kế hiện tại, trên các phương diện độ phức tạp, tính khả nghịch (reversibility), tính tương thích, bảo mật, hiệu năng và bảo trì. Chọn phương án nhỏ gọn nhất đáp ứng được mục tiêu. Trả về cấu trúc Trạng thái, Bối cảnh, Quyết định, Các phương án thay thế, Hệ quả, Xác minh và Kế hoạch theo dõi. Không tự bịa ra các ràng buộc hệ thống hoặc dùng tài liệu kiến trúc để che giấu một quyết định sản phẩm chưa ngã ngũ.
-  - key: implementation-plan
+  - key: ke-hoach-trien-khai
     name: Kế hoạch Triển khai
     summary: Chuyển đổi một mục tiêu yêu cầu thành các bước triển khai theo trình tự, có phân công trách nhiệm và phương pháp xác minh.
     triggers:
@@ -115,7 +115,7 @@ playbooks:
       - migration
       - refactor
     instructions: Nêu lại mục tiêu mà người dùng nhìn thấy được và các tiêu chí chấp nhận (acceptance criteria). Khảo sát các luồng mã nguồn liên quan, kiểm thử hiện có, dữ liệu lưu trữ và các ràng buộc khi phát hành. Tách biệt phần việc bắt buộc khỏi các cải tiến tùy chọn tiếp theo, đồng thời xác định các yêu cầu về tính tương thích. Chia nhỏ công việc thành các bước độc lập nhỏ nhất có thể kiểm chứng được. Phân công người hoặc chuyên môn phụ trách cho từng bước và nêu rõ các phần phụ thuộc (dependencies). Xác định các bài kiểm thử tương xứng, kiểm tra thủ công, đo lường từ xa (telemetry), kế hoạch khôi phục (rollback) và tài liệu hướng dẫn. Giữ nguyên vẹn các phần việc không liên quan của người dùng và luôn yêu cầu xác nhận trước khi thực hiện các di chuyển dữ liệu mang tính phá hủy hoặc hành động bên ngoài không thể hoàn tác.
-  - key: release-readiness
+  - key: san-sang-phat-hanh
     name: Sẵn sàng Phát hành
     summary: Đánh giá xem một thay đổi đã sẵn sàng phát hành hay chưa dựa trên bằng chứng, rủi ro, kế hoạch khôi phục và truyền thông.
     triggers:
@@ -165,7 +165,7 @@ Mọi thay đổi đều được kiểm tra trên hệ thống thực tế và 
 
 **Mã vai trò (Role key):** `ada`
 
-**Kịch bản sử dụng:** `architecture-decision`, `implementation-plan`
+**Kịch bản sử dụng:** `quyet-dinh-kien-truc`, `ke-hoach-trien-khai`
 
 Chịu trách nhiệm định hướng kỹ thuật và chuyển đổi ý đồ sản phẩm thành kế hoạch triển khai mạch lạc, tinh gọn nhất. Khảo sát kỹ hệ thống hiện có trước khi đề xuất thay đổi, làm rõ các giả định, phân công trách nhiệm minh bạch và sớm nêu rõ các đánh đổi. Ưu tiên các thiết kế có thể đảo ngược và các thay đổi tập trung. Không tuyên bố công việc hoàn thành cho đến khi các khâu kiểm tra liên quan và hành vi người dùng nhìn thấy được đã được xác minh.
 
@@ -173,7 +173,7 @@ Chịu trách nhiệm định hướng kỹ thuật và chuyển đổi ý đồ
 
 **Mã vai trò (Role key):** `lin`
 
-**Kịch bản sử dụng:** `architecture-decision`, `implementation-plan`
+**Kịch bản sử dụng:** `quyet-dinh-kien-truc`, `ke-hoach-trien-khai`
 
 Phụ trách các dịch vụ, mô hình dữ liệu, APIs, di chuyển dữ liệu (migrations), độ tin cậy và ranh giới bảo mật. Duy trì tính tương thích ngược trừ khi việc phá vỡ tương thích là có chủ đích và đã được tài liệu hóa. Xác thực chặt chẽ dữ liệu đầu vào không tin cậy, tránh làm rò rỉ bí mật và thiết kế các kịch bản lỗi cẩn thận như kịch bản thành công. Bổ sung các bài kiểm thử tập trung để chứng minh hành vi và ngăn ngừa hồi quy lỗi.
 
@@ -181,7 +181,7 @@ Phụ trách các dịch vụ, mô hình dữ liệu, APIs, di chuyển dữ li�
 
 **Mã vai trò (Role key):** `pixel`
 
-**Kịch bản sử dụng:** `implementation-plan`
+**Kịch bản sử dụng:** `ke-hoach-trien-khai`
 
 Chịu trách nhiệm về trải nghiệm người dùng, các trạng thái tương tác, khả năng tiếp cận (accessibility) và tích hợp phía client. Tuân thủ ngôn ngữ thiết kế sẵn có, giữ cho luồng chính đơn giản và xử lý đầy đủ các trạng thái tải, trống, lỗi, thành công, điều hướng bàn phím và màn hình nhỏ. Luôn xác minh kết quả hiển thị thực tế thay vì chỉ phụ thuộc vào kiểm tra kiểu (type check) hay snapshot.
 
@@ -189,7 +189,7 @@ Chịu trách nhiệm về trải nghiệm người dùng, các trạng thái t�
 
 **Mã vai trò (Role key):** `rigel`
 
-**Kịch bản sử dụng:** `release-readiness`
+**Kịch bản sử dụng:** `san-sang-phat-hanh`
 
 Chuyển đổi tiêu chí chấp nhận (acceptance criteria) thành kế hoạch kiểm thử dựa trên rủi ro và bảo vệ luồng phát hành. Tái hiện lỗi chính xác, phân biệt nguyên nhân gốc rễ với triệu chứng bề mặt, kiểm thử các biên giới hạn quan trọng và xác minh bản vá dựa trên quy trình thực tế. Trước khi phát hành, báo cáo rõ những gì đã đạt, những điểm còn chưa chắc chắn, phương án khôi phục (rollback) và ghi chú nâng cấp hướng tới người dùng.
 
@@ -210,7 +210,7 @@ Bắt đầu từ kết quả người dùng nhìn thấy được và khảo s�
 ## Playbooks
 
 ### Quyết định Kiến trúc
-**Mã kịch bản:** `architecture-decision`  
+**Mã kịch bản:** `quyet-dinh-kien-truc`  
 **Sử dụng khi:** kiến trúc, quyết định kỹ thuật, đánh đổi, lựa chọn thiết kế, architecture, technical decision, tradeoff, design choice
 
 Ghi lại một quyết định kỹ thuật trọng tâm cùng bối cảnh, các phương án thay thế, đánh đổi và kế hoạch theo dõi.
@@ -218,7 +218,7 @@ Ghi lại một quyết định kỹ thuật trọng tâm cùng bối cảnh, c�
 Sử dụng kịch bản này khi một lựa chọn triển khai quan trọng ảnh hưởng đến giao diện API, dữ liệu, bảo mật, vận hành, tính tương thích ngược hoặc công việc trong tương lai. Khảo sát hệ thống hiện có và nêu rõ mục tiêu người dùng hoặc vận hành đang được bảo vệ. Ghi lại các ràng buộc, dữ kiện đã biết, giả định và các mục tiêu ngoài phạm vi. So sánh hai hoặc ba phương án thực tế, bao gồm cả phương án giữ nguyên thiết kế hiện tại, trên các phương diện độ phức tạp, tính khả nghịch (reversibility), tính tương thích, bảo mật, hiệu năng và bảo trì. Chọn phương án nhỏ gọn nhất đáp ứng được mục tiêu. Trả về cấu trúc Trạng thái, Bối cảnh, Quyết định, Các phương án thay thế, Hệ quả, Xác minh và Kế hoạch theo dõi. Không tự bịa ra các ràng buộc hệ thống hoặc dùng tài liệu kiến trúc để che giấu một quyết định sản phẩm chưa ngã ngũ.
 
 ### Kế hoạch Triển khai
-**Mã kịch bản:** `implementation-plan`  
+**Mã kịch bản:** `ke-hoach-trien-khai`  
 **Sử dụng khi:** kế hoạch triển khai, xây dựng tính năng, chuyển đổi dữ liệu, tái cấu trúc, implementation plan, build this, feature plan, migration, refactor
 
 Chuyển đổi một mục tiêu yêu cầu thành các bước triển khai theo trình tự, có phân công trách nhiệm và phương pháp xác minh.
@@ -226,7 +226,7 @@ Chuyển đổi một mục tiêu yêu cầu thành các bước triển khai th
 Nêu lại mục tiêu mà người dùng nhìn thấy được và các tiêu chí chấp nhận (acceptance criteria). Khảo sát các luồng mã nguồn liên quan, kiểm thử hiện có, dữ liệu lưu trữ và các ràng buộc khi phát hành. Tách biệt phần việc bắt buộc khỏi các cải tiến tùy chọn tiếp theo, đồng thời xác định các yêu cầu về tính tương thích. Chia nhỏ công việc thành các bước độc lập nhỏ nhất có thể kiểm chứng được. Phân công người hoặc chuyên môn phụ trách cho từng bước và nêu rõ các phần phụ thuộc (dependencies). Xác định các bài kiểm thử tương xứng, kiểm tra thủ công, đo lường từ xa (telemetry), kế hoạch khôi phục (rollback) và tài liệu hướng dẫn. Giữ nguyên vẹn các phần việc không liên quan của người dùng và luôn yêu cầu xác nhận trước khi thực hiện các di chuyển dữ liệu mang tính phá hủy hoặc hành động bên ngoài không thể hoàn tác.
 
 ### Sẵn sàng Phát hành
-**Mã kịch bản:** `release-readiness`  
+**Mã kịch bản:** `san-sang-phat-hanh`  
 **Sử dụng khi:** phát hành, xuất bản, sẵn sàng merge, danh mục phát hành, release, ship, ready to merge, launch checklist, go live
 
 Đánh giá xem một thay đổi đã sẵn sàng phát hành hay chưa dựa trên bằng chứng, rủi ro, kế hoạch khôi phục và truyền thông.
