@@ -47,5 +47,267 @@
         ]
       }
     }
+  ],
+  "bots": [
+    {
+      "id": "assistant",
+      "name": "Assistant",
+      "title": "Trợ lý chung",
+      "category": "everyday",
+      "description": "Trả lời câu hỏi, soạn văn bản và nhận mọi việc bạn giao.",
+      "try": "Lên kế hoạch tuần của tôi từ danh sách việc này",
+      "look": {
+        "color": "green",
+        "mascotBody": "cursor"
+      },
+      "apps": [],
+      "routines": 0,
+      "file": "bots/assistant.json"
+    },
+    {
+      "id": "inbox",
+      "name": "Inbox",
+      "title": "Phân loại email",
+      "category": "work",
+      "description": "Đọc hộp thư, đánh dấu những gì cần bạn và soạn câu trả lời để bạn duyệt.",
+      "try": "Hôm nay hộp thư có gì cần tôi xử lý?",
+      "look": {
+        "color": "blue",
+        "mascotBody": "squircle"
+      },
+      "apps": [
+        "gmail"
+      ],
+      "routines": 1,
+      "file": "bots/inbox.json"
+    },
+    {
+      "id": "research",
+      "name": "Scout",
+      "title": "Nghiên cứu viên",
+      "category": "everyday",
+      "description": "Tìm hiểu trên web và trong tệp của bạn, rồi trả về bản tóm tắt có dẫn nguồn.",
+      "try": "Năm nay quy định AI của EU thay đổi gì? Có dẫn nguồn nhé",
+      "look": {
+        "color": "purple",
+        "mascotBody": "diamond"
+      },
+      "apps": [],
+      "routines": 0,
+      "file": "bots/research.json"
+    },
+    {
+      "id": "coder",
+      "name": "Dev",
+      "title": "Bạn đồng hành lập trình",
+      "category": "work",
+      "description": "Làm việc trong thư mục dự án: đọc, sửa, chạy test, giải thích thay đổi.",
+      "try": "Tìm lý do test bị lỗi và sửa nó",
+      "look": {
+        "color": "cyan",
+        "mascotBody": "hexagon"
+      },
+      "apps": [
+        "github"
+      ],
+      "routines": 0,
+      "file": "bots/coder.json"
+    },
+    {
+      "id": "community",
+      "name": "Watch",
+      "title": "Theo dõi cộng đồng",
+      "category": "work",
+      "description": "Theo dõi Discord, Slack hoặc diễn đàn và báo cáo điều quan trọng theo lịch.",
+      "try": "Từ hôm qua cộng đồng hỏi những gì?",
+      "look": {
+        "color": "orange",
+        "mascotBody": "shield"
+      },
+      "apps": [
+        "discord",
+        "slack"
+      ],
+      "routines": 1,
+      "file": "bots/community.json"
+    },
+    {
+      "id": "social",
+      "name": "Buzz",
+      "title": "Quản lý mạng xã hội",
+      "category": "work",
+      "description": "Lên kế hoạch bài đăng và thêm vào Postiz dưới dạng nháp hoặc bài hẹn giờ, sẵn sàng để bạn duyệt.",
+      "try": "Lên kế hoạch bài đăng tuần tới cho LinkedIn và X",
+      "look": {
+        "color": "coral",
+        "mascotBody": "star"
+      },
+      "apps": [
+        "postiz"
+      ],
+      "routines": 1,
+      "file": "bots/social.json"
+    },
+    {
+      "id": "ops",
+      "name": "Ops",
+      "title": "Vận hành",
+      "category": "work",
+      "description": "Giữ lịch, công việc và việc cần theo dõi luôn trôi chảy; nhắc bạn trước khi có gì bị trễ.",
+      "try": "Hôm nay có gì, và việc nào đã quá hạn?",
+      "look": {
+        "color": "yellow",
+        "mascotBody": "capsule"
+      },
+      "apps": [
+        "googlecalendar",
+        "notion",
+        "linear"
+      ],
+      "routines": 1,
+      "file": "bots/ops.json"
+    },
+    {
+      "id": "writer",
+      "name": "Quill",
+      "title": "Người viết",
+      "category": "writing",
+      "description": "Soạn và sửa bài đăng, email, tài liệu theo giọng văn của bạn, từ ghi chú thô tới bản cuối.",
+      "try": "Biến các ghi chú này thành một bài đăng LinkedIn",
+      "look": {
+        "color": "pink",
+        "mascotBody": "drop"
+      },
+      "apps": [],
+      "routines": 0,
+      "file": "bots/writer.json"
+    },
+    {
+      "id": "analyst",
+      "name": "Sigma",
+      "title": "Phân tích dữ liệu",
+      "category": "work",
+      "description": "Trả lời câu hỏi về bảng tính và CSV bằng số liệu, bảng và biểu đồ bạn có thể kiểm tra.",
+      "try": "10 khách hàng có doanh thu cao nhất trong CSV này là ai?",
+      "look": {
+        "color": "teal",
+        "mascotBody": "circle"
+      },
+      "apps": [],
+      "routines": 0,
+      "file": "bots/analyst.json"
+    },
+    {
+      "id": "meeting-notes",
+      "name": "Minutes",
+      "title": "Ghi chú cuộc họp",
+      "category": "work",
+      "description": "Biến bản ghi lời và ghi chú thô thành quyết định, người phụ trách và việc cần làm tiếp.",
+      "try": "Tóm tắt bản ghi này thành các quyết định và việc cần làm",
+      "look": {
+        "color": "coral",
+        "mascotBody": "squircle"
+      },
+      "apps": [],
+      "routines": 0,
+      "file": "bots/meeting-notes.json"
+    },
+    {
+      "id": "travel",
+      "name": "Atlas",
+      "title": "Lên kế hoạch du lịch",
+      "category": "personal",
+      "description": "Lên kế hoạch chuyến đi từng ngày theo ngân sách và nhịp độ của bạn, giữ mọi chi tiết ở một chỗ.",
+      "try": "Lên kế hoạch bốn ngày thong thả ở Đà Lạt vào tháng 12",
+      "look": {
+        "color": "blue",
+        "mascotBody": "star"
+      },
+      "apps": [
+        "googlecalendar"
+      ],
+      "routines": 0,
+      "file": "bots/travel.json"
+    },
+    {
+      "id": "study",
+      "name": "Sage",
+      "title": "Bạn học",
+      "category": "personal",
+      "description": "Giải thích từng bước, đố bạn và ghi lại những gì bạn còn cần ôn.",
+      "try": "Giải thích đệ quy cho người mới học lập trình",
+      "look": {
+        "color": "purple",
+        "mascotBody": "blob"
+      },
+      "apps": [],
+      "routines": 0,
+      "file": "bots/study.json"
+    },
+    {
+      "id": "humanizer",
+      "name": "Echo",
+      "title": "Làm văn tự nhiên",
+      "category": "writing",
+      "description": "Viết lại bản nháp cứng nhắc hoặc giống AI cho tự nhiên như bạn viết, và chỉ rõ mọi thay đổi.",
+      "try": "Làm email này bớt giống máy",
+      "look": {
+        "color": "pink",
+        "mascotBody": "blob"
+      },
+      "apps": [],
+      "routines": 0,
+      "file": "bots/humanizer.json"
+    },
+    {
+      "id": "design-critic",
+      "name": "Lens",
+      "title": "Nhận xét thiết kế",
+      "category": "design",
+      "description": "Nhận xét có xếp hạng cho ảnh chụp màn hình hoặc trang: bố cục, chữ, màu, nội dung và khả năng tiếp cận.",
+      "try": "Nhận xét ảnh chụp landing page này",
+      "look": {
+        "color": "red",
+        "mascotBody": "diamond"
+      },
+      "apps": [
+        "figma"
+      ],
+      "routines": 0,
+      "file": "bots/design-critic.json"
+    },
+    {
+      "id": "call-coach",
+      "name": "Coach",
+      "title": "Huấn luyện cuộc gọi bán hàng",
+      "category": "sales",
+      "description": "Chấm điểm cuộc gọi bán hàng từ bản ghi lời và gợi ý ba thay đổi hữu ích nhất.",
+      "try": "Chấm điểm bản ghi cuộc gọi tìm hiểu nhu cầu này",
+      "look": {
+        "color": "orange",
+        "mascotBody": "star"
+      },
+      "apps": [
+        "gong",
+        "hubspot"
+      ],
+      "routines": 0,
+      "file": "bots/call-coach.json"
+    },
+    {
+      "id": "plant-care",
+      "name": "Fern",
+      "title": "Nhật ký chăm cây",
+      "category": "personal",
+      "description": "Ghi nhật ký riêng về cây cảnh trong nhà và nhắc bạn khi cây cần tưới hoặc chăm sóc.",
+      "try": "Thêm cây trầu bà của tôi: phòng khách, nắng gián tiếp",
+      "look": {
+        "color": "green",
+        "mascotBody": "drop"
+      },
+      "apps": [],
+      "routines": 1,
+      "file": "bots/plant-care.json"
+    }
   ]
 }
