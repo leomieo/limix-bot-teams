@@ -1,5 +1,28 @@
 {
   "format": "openmaus.catalog",
   "version": 1,
-  "teams": []
+  "teams": [
+    {
+      "slug": "grok-minchoi",
+      "name": "Xác thực quy trình kiếm tiền AI",
+      "summary": "Truy vết các bài viết viral về 'kiếm tiền bằng AI' về tận nguồn gốc, lọc bỏ phễu bán hàng và giữ lại các quy trình thực tế có thể áp dụng.",
+      "category": "Tự động hóa",
+      "outcome": "Truy vết các tuyên bố kiếm tiền AI về nguồn gốc ban đầu và trích xuất quy trình thực tế có thể thử nghiệm.",
+      "setupMinutes": 5,
+      "featured": true,
+      "package": "packages/grok-minchoi.md",
+      "manifest": "teams/grok-minchoi/grok-minchoi.mausteam.json",
+      "readme": "teams/grok-minchoi/README.md",
+      "members": 3,
+      "skills": [
+        "teams/grok-minchoi/skills/claim-tracing/SKILL.md",
+        "teams/grok-minchoi/skills/mechanism-extraction/SKILL.md"
+      ],
+      "requires": {
+        "apps": [
+          "X (Twitter)"
+        ]
+      }
+    }
+  ]
 }
