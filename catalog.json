@@ -52,10 +52,10 @@
     {
       "id": "assistant",
       "name": "Assistant",
-      "title": "Trợ lý chung",
+      "title": "General assistant",
       "category": "everyday",
       "description": "Trả lời câu hỏi, soạn văn bản và nhận mọi việc bạn giao.",
-      "try": "Lên kế hoạch tuần của tôi từ danh sách việc này",
+      "try": "Plan my week from this list of to-dos",
       "look": {
         "color": "green",
         "mascotBody": "cursor"
@@ -67,10 +67,10 @@
     {
       "id": "inbox",
       "name": "Inbox",
-      "title": "Phân loại email",
+      "title": "Email triage",
       "category": "work",
       "description": "Đọc hộp thư, đánh dấu những gì cần bạn và soạn câu trả lời để bạn duyệt.",
-      "try": "Hôm nay hộp thư có gì cần tôi xử lý?",
+      "try": "What in my inbox needs me today?",
       "look": {
         "color": "blue",
         "mascotBody": "squircle"
@@ -84,10 +84,10 @@
     {
       "id": "research",
       "name": "Scout",
-      "title": "Nghiên cứu viên",
+      "title": "Researcher",
       "category": "everyday",
       "description": "Tìm hiểu trên web và trong tệp của bạn, rồi trả về bản tóm tắt có dẫn nguồn.",
-      "try": "Năm nay quy định AI của EU thay đổi gì? Có dẫn nguồn nhé",
+      "try": "What changed in EU AI rules this year? Sources please",
       "look": {
         "color": "purple",
         "mascotBody": "diamond"
@@ -99,10 +99,10 @@
     {
       "id": "coder",
       "name": "Dev",
-      "title": "Bạn đồng hành lập trình",
+      "title": "Coding partner",
       "category": "work",
       "description": "Làm việc trong thư mục dự án: đọc, sửa, chạy test, giải thích thay đổi.",
-      "try": "Tìm lý do test bị lỗi và sửa nó",
+      "try": "Find why the tests fail and fix it",
       "look": {
         "color": "cyan",
         "mascotBody": "hexagon"
@@ -116,10 +116,10 @@
     {
       "id": "community",
       "name": "Watch",
-      "title": "Theo dõi cộng đồng",
+      "title": "Community monitor",
       "category": "work",
       "description": "Theo dõi Discord, Slack hoặc diễn đàn và báo cáo điều quan trọng theo lịch.",
-      "try": "Từ hôm qua cộng đồng hỏi những gì?",
+      "try": "What did the community ask about since yesterday?",
       "look": {
         "color": "orange",
         "mascotBody": "shield"
@@ -134,10 +134,10 @@
     {
       "id": "social",
       "name": "Buzz",
-      "title": "Quản lý mạng xã hội",
+      "title": "Social media manager",
       "category": "work",
       "description": "Lên kế hoạch bài đăng và thêm vào Postiz dưới dạng nháp hoặc bài hẹn giờ, sẵn sàng để bạn duyệt.",
-      "try": "Lên kế hoạch bài đăng tuần tới cho LinkedIn và X",
+      "try": "Plan next week's posts for LinkedIn and X",
       "look": {
         "color": "coral",
         "mascotBody": "star"
@@ -151,10 +151,10 @@
     {
       "id": "ops",
       "name": "Ops",
-      "title": "Vận hành",
+      "title": "Operations",
       "category": "work",
       "description": "Giữ lịch, công việc và việc cần theo dõi luôn trôi chảy; nhắc bạn trước khi có gì bị trễ.",
-      "try": "Hôm nay có gì, và việc nào đã quá hạn?",
+      "try": "What's on today, and what's overdue?",
       "look": {
         "color": "yellow",
         "mascotBody": "capsule"
@@ -170,10 +170,10 @@
     {
       "id": "writer",
       "name": "Quill",
-      "title": "Người viết",
+      "title": "Writer",
       "category": "writing",
       "description": "Soạn và sửa bài đăng, email, tài liệu theo giọng văn của bạn, từ ghi chú thô tới bản cuối.",
-      "try": "Biến các ghi chú này thành một bài đăng LinkedIn",
+      "try": "Turn these notes into a LinkedIn post",
       "look": {
         "color": "pink",
         "mascotBody": "drop"
@@ -185,10 +185,10 @@
     {
       "id": "analyst",
       "name": "Sigma",
-      "title": "Phân tích dữ liệu",
+      "title": "Data analyst",
       "category": "work",
       "description": "Trả lời câu hỏi về bảng tính và CSV bằng số liệu, bảng và biểu đồ bạn có thể kiểm tra.",
-      "try": "10 khách hàng có doanh thu cao nhất trong CSV này là ai?",
+      "try": "What are the top 10 customers by revenue in this CSV?",
       "look": {
         "color": "teal",
         "mascotBody": "circle"
@@ -200,10 +200,10 @@
     {
       "id": "meeting-notes",
       "name": "Minutes",
-      "title": "Ghi chú cuộc họp",
+      "title": "Meeting notes",
       "category": "work",
       "description": "Biến bản ghi lời và ghi chú thô thành quyết định, người phụ trách và việc cần làm tiếp.",
-      "try": "Tóm tắt bản ghi này thành các quyết định và việc cần làm",
+      "try": "Summarise this transcript into decisions and action items",
       "look": {
         "color": "coral",
         "mascotBody": "squircle"
@@ -215,10 +215,10 @@
     {
       "id": "travel",
       "name": "Atlas",
-      "title": "Lên kế hoạch du lịch",
+      "title": "Travel planner",
       "category": "personal",
       "description": "Lên kế hoạch chuyến đi từng ngày theo ngân sách và nhịp độ của bạn, giữ mọi chi tiết ở một chỗ.",
-      "try": "Lên kế hoạch bốn ngày thong thả ở Đà Lạt vào tháng 12",
+      "try": "Plan four relaxed days in Lisbon in May",
       "look": {
         "color": "blue",
         "mascotBody": "star"
@@ -232,10 +232,10 @@
     {
       "id": "study",
       "name": "Sage",
-      "title": "Bạn học",
+      "title": "Study buddy",
       "category": "personal",
       "description": "Giải thích từng bước, đố bạn và ghi lại những gì bạn còn cần ôn.",
-      "try": "Giải thích đệ quy cho người mới học lập trình",
+      "try": "Explain recursion like I'm new to programming",
       "look": {
         "color": "purple",
         "mascotBody": "blob"
@@ -247,10 +247,10 @@
     {
       "id": "humanizer",
       "name": "Echo",
-      "title": "Làm văn tự nhiên",
+      "title": "Humanizer",
       "category": "writing",
       "description": "Viết lại bản nháp cứng nhắc hoặc giống AI cho tự nhiên như bạn viết, và chỉ rõ mọi thay đổi.",
-      "try": "Làm email này bớt giống máy",
+      "try": "Make this email sound less robotic",
       "look": {
         "color": "pink",
         "mascotBody": "blob"
@@ -262,10 +262,10 @@
     {
       "id": "design-critic",
       "name": "Lens",
-      "title": "Nhận xét thiết kế",
+      "title": "Design critic",
       "category": "design",
       "description": "Nhận xét có xếp hạng cho ảnh chụp màn hình hoặc trang: bố cục, chữ, màu, nội dung và khả năng tiếp cận.",
-      "try": "Nhận xét ảnh chụp landing page này",
+      "try": "Critique this landing page screenshot",
       "look": {
         "color": "red",
         "mascotBody": "diamond"
@@ -279,10 +279,10 @@
     {
       "id": "call-coach",
       "name": "Coach",
-      "title": "Huấn luyện cuộc gọi bán hàng",
+      "title": "Sales call coach",
       "category": "sales",
       "description": "Chấm điểm cuộc gọi bán hàng từ bản ghi lời và gợi ý ba thay đổi hữu ích nhất.",
-      "try": "Chấm điểm bản ghi cuộc gọi tìm hiểu nhu cầu này",
+      "try": "Score this discovery call transcript",
       "look": {
         "color": "orange",
         "mascotBody": "star"
@@ -297,10 +297,10 @@
     {
       "id": "plant-care",
       "name": "Fern",
-      "title": "Nhật ký chăm cây",
+      "title": "Plant care log",
       "category": "personal",
       "description": "Ghi nhật ký riêng về cây cảnh trong nhà và nhắc bạn khi cây cần tưới hoặc chăm sóc.",
-      "try": "Thêm cây trầu bà của tôi: phòng khách, nắng gián tiếp",
+      "try": "Add my monstera: living room, bright indirect light",
       "look": {
         "color": "green",
         "mascotBody": "drop"

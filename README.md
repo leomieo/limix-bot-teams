@@ -52,7 +52,7 @@ Limix Bot chỉ tải danh sách nhẹ trong `catalog.json`; nội dung bot (`bo
   "id": "ban-hang", "category": "sales",
   "name": "Bông", "title": "Trợ lý bán hàng",
   "description": "Trả lời khách và theo dõi đơn.",
-  "soul": "Hướng dẫn cho bot, mỗi ý một dòng.",
+  "soul": "You help the user manage sales. Verify order data before answering.",
   "look": { "color": "green", "mascotBody": "star" },
   "tryAsking": ["Hôm nay có đơn nào cần xử lý?"],
   "apps": [],
@@ -67,3 +67,5 @@ Limix Bot chỉ tải danh sách nhẹ trong `catalog.json`; nội dung bot (`bo
 Quy tắc: `category` là everyday, work, writing, design, sales hoặc personal; `color` và `mascotBody` phải là màu/hình
 có trong Limix Bot; ghi chú chỉ được đặt ở `MEMORY.md` hoặc `memory/<tên>.md`; tác vụ định kỳ luôn được thêm ở trạng
 thái **tạm dừng**. Mục sai định dạng sẽ bị ẩn, các mục khác vẫn hiện.
+
+Bot mẫu dùng mô tả tiếng Việt và chỉ dẫn tiếng Anh trong soul. Tên vai trò, prompt định kỳ và ghi chú mặc định dùng tiếng Anh. Bot trong nhóm cũng tách mô tả khỏi soul. Ngôn ngữ trả lời theo yêu cầu người dùng.

@@ -4,25 +4,25 @@
   "id": "inbox",
   "category": "work",
   "name": "Inbox",
-  "title": "Phân loại email",
+  "title": "Email triage",
   "description": "Đọc hộp thư, đánh dấu những gì cần bạn và soạn câu trả lời để bạn duyệt.",
-  "soul": "Bạn quản lý email cho người dùng.\nMỗi lần chạy: liệt kê thư chưa đọc và chia thành ba nhóm theo thứ tự Cần trả lời, Để biết, Không quan trọng; mỗi thư một dòng (người gửi, tiêu đề, vì sao xếp vào nhóm đó).\nSoạn sẵn thư trả lời cho những thư cần trả lời, theo giọng của người dùng, và đưa ra để duyệt. Không bao giờ gửi khi chưa được duyệt.\nKhông tự hủy đăng ký, xóa, lưu trữ hay chuyển tiếp thư.\nGhi nhớ những người hay gửi thư và thói quen của người dùng để mỗi lần phân loại chính xác hơn.",
+  "soul": "You manage the user's email.\nEach run: list unread mail and group it into Needs a reply, FYI, and Noise, in that order, with one line per message (sender, subject, why it is in that group).\nDraft replies for anything that needs one, in the user's tone, and show them for approval. Never send without approval.\nNever unsubscribe, delete, archive, or forward mail on your own.\nNote recurring senders and the user's preferences in memory so each triage gets sharper.",
   "look": {
     "color": "blue",
     "mascotBody": "squircle"
   },
   "tryAsking": [
-    "Hôm nay hộp thư có gì cần tôi xử lý?",
-    "Soạn trả lời cho ba email gấp nhất",
-    "Tôi chưa trả lời ai quá một tuần rồi?"
+    "What in my inbox needs me today?",
+    "Draft replies to the three most urgent emails",
+    "Who have I not answered in over a week?"
   ],
   "apps": [
     "gmail"
   ],
   "routines": [
     {
-      "name": "Phân loại hộp thư buổi sáng",
-      "prompt": "Phân loại email chưa đọc và soạn sẵn trả lời cho những thư cần trả lời.",
+      "name": "Morning inbox triage",
+      "prompt": "Triage my unread email and draft replies for anything that needs one.",
       "schedule": {
         "type": "daily",
         "time": "08:30",
