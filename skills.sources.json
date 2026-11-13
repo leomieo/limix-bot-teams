@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "repository": "https://github.com/milind-soni/openmausbot-teams",
+  "commit": "c45cc3c4c88db8bfc125a691553d448141d735f9",
+  "skills": [
+    {
+      "team": "engineering",
+      "name": "architecture-decision",
+      "sourcePath": "teams/engineering/skills/architecture-decision/SKILL.md",
+      "sourceSha256": "1282ebd4e3883731e8a4a8f973d1a00a1b131119fd20c44efa2615642d5c515a",
+      "coreSha256": "1282ebd4e3883731e8a4a8f973d1a00a1b131119fd20c44efa2615642d5c515a",
+      "mode": "verbatim"
+    },
+    {
+      "team": "engineering",
+      "name": "implementation-plan",
+      "sourcePath": "teams/engineering/skills/implementation-plan/SKILL.md",
+      "sourceSha256": "596aee138a26d1b7bfc7bafa1e1a5d4dd55ac79d3aa50163bf2e3c40d2d0fa23",
+      "coreSha256": "596aee138a26d1b7bfc7bafa1e1a5d4dd55ac79d3aa50163bf2e3c40d2d0fa23",
+      "mode": "verbatim"
+    },
+    {
+      "team": "engineering",
+      "name": "release-readiness",
+      "sourcePath": "teams/engineering/skills/release-readiness/SKILL.md",
+      "sourceSha256": "f880ff2925f010028a6170ba7c6d2d18a661785055ceac05865e26ec5a133775",
+      "coreSha256": "f880ff2925f010028a6170ba7c6d2d18a661785055ceac05865e26ec5a133775",
+      "mode": "verbatim"
+    },
+    {
+      "team": "grok-minchoi",
+      "name": "claim-tracing",
+      "sourcePath": "packages/grok-minchoi.md",
+      "sourceSha256": "e476a6a155931663ec4d5589ee6fde78a68311369d900480fadc0e5577bf210c",
+      "coreSha256": "4b1c04d7e30800d3e5a94a36cda4db37372abfb04a34826c9b02beebd6d1443c",
+      "mode": "package-playbook"
+    },
+    {
+      "team": "grok-minchoi",
+      "name": "mechanism-extraction",
+      "sourcePath": "packages/grok-minchoi.md",
+      "sourceSha256": "e476a6a155931663ec4d5589ee6fde78a68311369d900480fadc0e5577bf210c",
+      "coreSha256": "ba81087e804c68301acf5f02bab3be77729d051e93163d56be66323ebc84a1e3",
+      "mode": "package-playbook"
+    }
+  ]
+}

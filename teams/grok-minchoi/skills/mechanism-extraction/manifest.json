@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "name": "mechanism-extraction",
+  "version": "1.0.0",
+  "source": {
+    "url": "https://github.com/milind-soni/openmausbot-teams/blob/c45cc3c4c88db8bfc125a691553d448141d735f9/packages/grok-minchoi.md",
+    "commit": "c45cc3c4c88db8bfc125a691553d448141d735f9",
+    "sha256": "ba81087e804c68301acf5f02bab3be77729d051e93163d56be66323ebc84a1e3",
+    "license": "MIT"
+  },
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "vietnamese": {
+    "description": "Tách quy trình có thể tái lập khỏi sự thổi phồng và phễu bán hàng.",
+    "aliases": [
+      "Bóc tách cơ chế",
+      "boc-tach-co-che"
+    ],
+    "keywords": [
+      "bóc tách cơ chế",
+      "kiểm chứng cơ chế",
+      "phễu bán hàng",
+      "có thật không"
+    ],
+    "examples": [
+      "Bóc tách quy trình thực tế và kiểm tra phễu bán hàng trong tuyên bố này."
+    ],
+    "guide": "references/guide.vi.md",
+    "sourceSha256": "ba81087e804c68301acf5f02bab3be77729d051e93163d56be66323ebc84a1e3"
+  },
+  "requiredCapabilities": [],
+  "permissions": [],
+  "syncedAt": "2026-11-13T09:13:19.840784Z",
+  "security": {
+    "status": "unreviewed",
+    "findings": []
+  },
+  "compatibility": {
+    "status": "unchecked",
+    "notes": [
+      "Template metadata only; runtime activation requires host validation."
+    ]
+  }
+}

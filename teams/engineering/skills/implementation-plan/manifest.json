@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "name": "implementation-plan",
+  "version": "1.0.0",
+  "source": {
+    "url": "https://github.com/milind-soni/openmausbot-teams/blob/c45cc3c4c88db8bfc125a691553d448141d735f9/teams/engineering/skills/implementation-plan/SKILL.md",
+    "commit": "c45cc3c4c88db8bfc125a691553d448141d735f9",
+    "sha256": "596aee138a26d1b7bfc7bafa1e1a5d4dd55ac79d3aa50163bf2e3c40d2d0fa23",
+    "license": "MIT"
+  },
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "vietnamese": {
+    "description": "Chuyển mục tiêu thành các bước triển khai có phân công và kiểm chứng.",
+    "aliases": [
+      "Kế hoạch triển khai",
+      "ke-hoach-trien-khai"
+    ],
+    "keywords": [
+      "kế hoạch triển khai",
+      "xây dựng tính năng",
+      "chuyển đổi dữ liệu",
+      "tái cấu trúc"
+    ],
+    "examples": [
+      "Lập kế hoạch triển khai tính năng này, có người phụ trách và cách kiểm chứng."
+    ],
+    "guide": "references/guide.vi.md",
+    "sourceSha256": "596aee138a26d1b7bfc7bafa1e1a5d4dd55ac79d3aa50163bf2e3c40d2d0fa23"
+  },
+  "requiredCapabilities": [],
+  "permissions": [],
+  "syncedAt": "2026-11-13T09:13:19.840784Z",
+  "security": {
+    "status": "unreviewed",
+    "findings": []
+  },
+  "compatibility": {
+    "status": "unchecked",
+    "notes": [
+      "Template metadata only; runtime activation requires host validation."
+    ]
+  }
+}

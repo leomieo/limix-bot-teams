@@ -10,8 +10,8 @@ Nhóm 3 bot chuyên trách xác thực và kiểm chứng: tiếp nhận một c
 
 ## Kỹ năng đi kèm (Skills)
 
-- **truy-vet-tuyen-bo (Truy vết tuyên bố):** Truy vết nguồn gốc ban đầu của các tuyên bố viral kèm URL, trích dẫn nguyên văn và bằng chứng thực tế.
-- **boc-tach-co-che (Bóc tách cơ chế):** Bóc tách cơ chế hoạt động thực tế và loại bỏ các phễu bán hàng giả tạo.
+- **claim-tracing (Truy vết tuyên bố):** Truy vết nguồn gốc ban đầu của các tuyên bố viral kèm URL, trích dẫn nguyên văn và bằng chứng thực tế.
+- **mechanism-extraction (Bóc tách cơ chế):** Bóc tách cơ chế hoạt động thực tế và loại bỏ các phễu bán hàng giả tạo.
 
 ## Ứng dụng kết nối
 
@@ -21,3 +21,7 @@ Nhóm 3 bot chuyên trách xác thực và kiểm chứng: tiếp nhận một c
 ## Nguồn gốc
 
 Mẫu nhóm bot này được xây dựng dựa trên phân tích chuỗi bài viết viral của @minchoi (Min Choi) trên X ngày 23/08/2026 tổng hợp các ví dụ kiếm tiền từ Grok Bot, biến các tuyên bố truyền thông thành quy trình kiểm định có phương pháp.
+
+## Hybrid Skills
+
+Tên kỹ thuật và lõi thực thi giữ tiếng Anh. Mỗi skill có `manifest.json` cho mô tả, aliases và keywords tiếng Việt, cùng `references/guide.vi.md` để trợ giúp khi cần. Không tải hai bản hướng dẫn đầy đủ cùng lúc. Xem [quy ước Hybrid](../../docs/hybrid-skills.md) và [nguồn đã khóa phiên bản](../../skills.sources.json). Metadata không cấp quyền và không tự bật skill.

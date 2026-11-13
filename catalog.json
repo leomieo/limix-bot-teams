@@ -15,8 +15,8 @@
       "readme": "teams/grok-minchoi/README.md",
       "members": 3,
       "skills": [
-        "teams/grok-minchoi/skills/truy-vet-tuyen-bo/SKILL.md",
-        "teams/grok-minchoi/skills/boc-tach-co-che/SKILL.md"
+        "teams/grok-minchoi/skills/claim-tracing/SKILL.md",
+        "teams/grok-minchoi/skills/mechanism-extraction/SKILL.md"
       ],
       "requires": {
         "apps": [
@@ -37,9 +37,9 @@
       "readme": "teams/engineering/README.md",
       "members": 4,
       "skills": [
-        "teams/engineering/skills/quyet-dinh-kien-truc/SKILL.md",
-        "teams/engineering/skills/ke-hoach-trien-khai/SKILL.md",
-        "teams/engineering/skills/san-sang-phat-hanh/SKILL.md"
+        "teams/engineering/skills/architecture-decision/SKILL.md",
+        "teams/engineering/skills/implementation-plan/SKILL.md",
+        "teams/engineering/skills/release-readiness/SKILL.md"
       ],
       "requires": {
         "apps": [

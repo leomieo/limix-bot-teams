@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "name": "claim-tracing",
+  "version": "1.0.0",
+  "source": {
+    "url": "https://github.com/milind-soni/openmausbot-teams/blob/c45cc3c4c88db8bfc125a691553d448141d735f9/packages/grok-minchoi.md",
+    "commit": "c45cc3c4c88db8bfc125a691553d448141d735f9",
+    "sha256": "4b1c04d7e30800d3e5a94a36cda4db37372abfb04a34826c9b02beebd6d1443c",
+    "license": "MIT"
+  },
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "vietnamese": {
+    "description": "Tìm bài đăng gốc cùng URL, ngày đăng, trích dẫn và tình trạng bằng chứng.",
+    "aliases": [
+      "Truy vết tuyên bố",
+      "truy-vet-tuyen-bo"
+    ],
+    "keywords": [
+      "truy vết tuyên bố",
+      "kiểm chứng chuỗi bài",
+      "bài đăng gốc",
+      "kiểm tra nguồn"
+    ],
+    "examples": [
+      "Truy vết các tuyên bố trong chuỗi bài này về bài đăng gốc."
+    ],
+    "guide": "references/guide.vi.md",
+    "sourceSha256": "4b1c04d7e30800d3e5a94a36cda4db37372abfb04a34826c9b02beebd6d1443c"
+  },
+  "requiredCapabilities": [],
+  "permissions": [],
+  "syncedAt": "2026-11-13T09:13:19.840784Z",
+  "security": {
+    "status": "unreviewed",
+    "findings": []
+  },
+  "compatibility": {
+    "status": "unchecked",
+    "notes": [
+      "Template metadata only; runtime activation requires host validation."
+    ]
+  }
+}

@@ -11,9 +11,9 @@ Nhóm kỹ thuật sản phẩm cân bằng gồm 4 thành viên, đưa một th
 
 ## Kỹ năng đi kèm (Skills)
 
-- **quyet-dinh-kien-truc (Quyết định kiến trúc):** Ghi lại quyết định kỹ thuật trọng tâm cùng bối cảnh, phương án thay thế và các đánh đổi.
-- **ke-hoach-trien-khai (Kế hoạch triển khai):** Chuyển đổi mục tiêu thành kế hoạch triển khai theo trình tự, có phân công và phương pháp xác minh rõ ràng.
-- **san-sang-phat-hanh (Sẵn sàng phát hành):** Đánh giá mức độ sẵn sàng phát hành dựa trên bằng chứng, rủi ro, kế hoạch rollback và truyền thông.
+- **architecture-decision (Quyết định kiến trúc):** Ghi lại quyết định kỹ thuật trọng tâm cùng bối cảnh, phương án thay thế và các đánh đổi.
+- **implementation-plan (Kế hoạch triển khai):** Chuyển đổi mục tiêu thành kế hoạch triển khai theo trình tự, có phân công và phương pháp xác minh rõ ràng.
+- **release-readiness (Sẵn sàng phát hành):** Đánh giá mức độ sẵn sàng phát hành dựa trên bằng chứng, rủi ro, kế hoạch rollback và truyền thông.
 
 ## Kết nối hữu ích
 
@@ -22,3 +22,7 @@ Kết nối **GitHub** rất hữu ích khi làm việc với kho lưu trữ mã
 ## Ví dụ yêu cầu
 
 > Khảo sát kho lưu trữ này và đề xuất kế hoạch an toàn, nhỏ gọn nhất để thêm tính năng mẫu nhóm bot (team templates). Kế hoạch cần bao gồm phân công trách nhiệm, kiểm thử, rủi ro và danh mục kiểm tra phát hành.
+
+## Hybrid Skills
+
+Tên kỹ thuật và lõi thực thi giữ tiếng Anh. Mỗi skill có `manifest.json` cho mô tả, aliases và keywords tiếng Việt, cùng `references/guide.vi.md` để trợ giúp khi cần. Không tải hai bản hướng dẫn đầy đủ cùng lúc. Xem [quy ước Hybrid](../../docs/hybrid-skills.md) và [nguồn đã khóa phiên bản](../../skills.sources.json). Metadata không cấp quyền và không tự bật skill.

@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "name": "release-readiness",
+  "version": "1.0.0",
+  "source": {
+    "url": "https://github.com/milind-soni/openmausbot-teams/blob/c45cc3c4c88db8bfc125a691553d448141d735f9/teams/engineering/skills/release-readiness/SKILL.md",
+    "commit": "c45cc3c4c88db8bfc125a691553d448141d735f9",
+    "sha256": "f880ff2925f010028a6170ba7c6d2d18a661785055ceac05865e26ec5a133775",
+    "license": "MIT"
+  },
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "vietnamese": {
+    "description": "Đánh giá khả năng phát hành dựa trên bằng chứng, rủi ro và phương án rollback.",
+    "aliases": [
+      "Sẵn sàng phát hành",
+      "san-sang-phat-hanh"
+    ],
+    "keywords": [
+      "phát hành",
+      "xuất bản",
+      "sẵn sàng merge",
+      "danh mục phát hành"
+    ],
+    "examples": [
+      "Đánh giá bản sửa này đã sẵn sàng phát hành chưa."
+    ],
+    "guide": "references/guide.vi.md",
+    "sourceSha256": "f880ff2925f010028a6170ba7c6d2d18a661785055ceac05865e26ec5a133775"
+  },
+  "requiredCapabilities": [],
+  "permissions": [],
+  "syncedAt": "2026-11-13T09:13:19.840784Z",
+  "security": {
+    "status": "unreviewed",
+    "findings": []
+  },
+  "compatibility": {
+    "status": "unchecked",
+    "notes": [
+      "Template metadata only; runtime activation requires host validation."
+    ]
+  }
+}

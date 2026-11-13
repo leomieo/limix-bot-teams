@@ -12,6 +12,8 @@ teams/<mã-mẫu>/
   <mã-mẫu>.mausteam.json          mô tả nhóm bot
   README.md                       giới thiệu mẫu bằng tiếng Việt
   skills/<tên>/SKILL.md           kỹ năng đi kèm (nếu có)
+  skills/<tên>/manifest.json      metadata Hybrid, tên gốc tiếng Anh và tìm kiếm tiếng Việt
+  skills/<tên>/references/guide.vi.md  trợ giúp tiếng Việt, chỉ đọc khi cần
 ```
 
 ## Thêm một mẫu
@@ -35,6 +37,8 @@ teams/<mã-mẫu>/
 
 `members` là số bot trong nhóm (1–200), `skills` là danh sách đường dẫn tới các tệp `SKILL.md` trong
 `teams/<mã-mẫu>/skills/`. Tối đa 100 mẫu.
+
+Skills dùng **English Core + Vietnamese Layer**: giữ nguyên tên kỹ thuật và hướng dẫn gốc tiếng Anh; phần tiếng Việt nằm riêng trong metadata và tài liệu trợ giúp. Xem [quy ước và giới hạn tích hợp](docs/hybrid-skills.md).
 
 ## Thêm một bot mẫu
 
