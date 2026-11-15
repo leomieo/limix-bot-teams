@@ -42,6 +42,30 @@
       "sourceSha256": "e476a6a155931663ec4d5589ee6fde78a68311369d900480fadc0e5577bf210c",
       "coreSha256": "ba81087e804c68301acf5f02bab3be77729d051e93163d56be66323ebc84a1e3",
       "mode": "package-playbook"
+    },
+    {
+      "team": "seo-growth",
+      "name": "keyword-opportunity-map",
+      "sourcePath": "teams/seo-growth/skills/keyword-opportunity-map/SKILL.md",
+      "sourceSha256": "b1df75afb6dfbad1c9c220435e3e5b58f5ee5803b49ebf6606b2d1603cf1a686",
+      "coreSha256": "b1df75afb6dfbad1c9c220435e3e5b58f5ee5803b49ebf6606b2d1603cf1a686",
+      "mode": "verbatim"
+    },
+    {
+      "team": "seo-growth",
+      "name": "technical-seo-triage",
+      "sourcePath": "teams/seo-growth/skills/technical-seo-triage/SKILL.md",
+      "sourceSha256": "aed7b4912bafbcf6f74170c94ad1c7f24f5fd1290e048af7a47edc1ab7c44910",
+      "coreSha256": "aed7b4912bafbcf6f74170c94ad1c7f24f5fd1290e048af7a47edc1ab7c44910",
+      "mode": "verbatim"
+    },
+    {
+      "team": "seo-growth",
+      "name": "content-brief",
+      "sourcePath": "teams/seo-growth/skills/content-brief/SKILL.md",
+      "sourceSha256": "e8b860d737ae02e01f28d354cf3337af43fc41aa86fdb4f5de3a136a4dadf470",
+      "coreSha256": "e8b860d737ae02e01f28d354cf3337af43fc41aa86fdb4f5de3a136a4dadf470",
+      "mode": "verbatim"
     }
   ]
 }

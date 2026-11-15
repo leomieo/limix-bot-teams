@@ -18,7 +18,7 @@ const entries = lock.skills.map((entry) => {
 });
 
 test('catalog paths resolve and each team has one canonical skill directory per entry', () => {
-  assert.equal(entries.length, 5);
+  assert.equal(entries.length, 8);
   for (const team of catalog.teams) {
     const expected = entries.filter((entry) => entry.team === team.slug);
     assert.deepEqual(team.skills.sort(), expected.map((entry) => `${entry.path}/SKILL.md`).sort());
@@ -61,6 +61,31 @@ test('pinned upstream files and extracted playbook instructions are preserved', 
 });
 
 const app = process.env.LIMIX_BOT_SOURCE;
+test('SEO template preserves roles, room rules, routine approval and English playbook behavior', { skip: !app || !upstream }, async () => {
+  const require = createRequire(join(app, 'package.json'));
+  const { parse } = require('yaml');
+  const metadata = (text) => parse(text.split(/^---\r?$/m)[1]);
+  const original = metadata(execFileSync('git', ['-C', upstream, 'show', `${lock.commit}:packages/seo-growth.md`], { encoding: 'utf8' }));
+  const localized = metadata(read('packages/seo-growth.md'));
+  const team = JSON.parse(read('teams/seo-growth/seo-growth.mausteam.json')).team;
+  assert.equal(localized.chiefOfStaff, original.chiefOfStaff);
+  assert.deepEqual(localized.rooms, original.rooms);
+  assert.deepEqual(localized.routines, original.routines);
+  assert.equal(localized.routines[0].enabledAfterInstall, false);
+  for (const agent of original.agents) {
+    const localizedAgent = localized.agents.find((entry) => entry.key === agent.key);
+    const member = team.members.find((entry) => entry.key === agent.key);
+    assert.equal(localizedAgent.soul, agent.description);
+    assert.equal(member.soul, agent.description);
+    assert.deepEqual(localizedAgent.playbooks, agent.playbooks);
+    assert.deepEqual(member.appearance, agent.appearance);
+  }
+  for (const playbook of original.playbooks) {
+    const localizedPlaybook = localized.playbooks.find((entry) => entry.key === playbook.key);
+    assert.equal(localizedPlaybook.instructions, playbook.instructions);
+    for (const trigger of playbook.triggers) assert.ok(localizedPlaybook.triggers.includes(trigger));
+  }
+});
 test('Limix parsers accept every core, sidecar, catalog and BotMRR package', { skip: !app }, async () => {
   const load = (path) => import(pathToFileURL(join(app, path)).href);
   const { parseSkillMd } = await load('shared/skill-md.ts');
@@ -89,7 +114,7 @@ test('Limix parsers accept every core, sidecar, catalog and BotMRR package', { s
   }
 });
 
-test('Limix retrieval finds all five skills by Vietnamese and English without loading references', { skip: !app }, async () => {
+test('Limix retrieval finds all registered skills by Vietnamese and English without loading references', { skip: !app }, async () => {
   const { rankSkills } = await import(pathToFileURL(join(app, 'shared/skill-fit.ts')).href);
   const skills = entries.map(({ name, core, manifest }) => ({ name, description: core.match(/^description: (.*)$/m)[1], descriptionVi: manifest.vietnamese.description, aliases: manifest.vietnamese.aliases, keywords: manifest.vietnamese.keywords }));
   for (const { name, manifest } of entries) {

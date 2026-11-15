@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "name": "content-brief",
+  "version": "1.0.0",
+  "source": {
+    "url": "https://github.com/milind-soni/openmausbot-teams/blob/c45cc3c4c88db8bfc125a691553d448141d735f9/teams/seo-growth/skills/content-brief/SKILL.md",
+    "commit": "c45cc3c4c88db8bfc125a691553d448141d735f9",
+    "sha256": "e8b860d737ae02e01f28d354cf3337af43fc41aa86fdb4f5de3a136a4dadf470",
+    "license": "MIT"
+  },
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "vietnamese": {
+    "description": "Tạo đề cương nội dung theo nhu cầu tìm kiếm, hữu ích cho người đọc và cụ thể với doanh nghiệp.",
+    "aliases": [
+      "Đề cương nội dung SEO"
+    ],
+    "keywords": [
+      "đề cương nội dung SEO",
+      "dàn ý bài viết",
+      "nội dung trang đích",
+      "cập nhật nội dung"
+    ],
+    "examples": [
+      "Lập đề cương bài viết cho chủ đề đã xác thực, kèm nguồn cần bổ sung và liên kết nội bộ."
+    ],
+    "guide": "references/guide.vi.md",
+    "sourceSha256": "e8b860d737ae02e01f28d354cf3337af43fc41aa86fdb4f5de3a136a4dadf470"
+  },
+  "requiredCapabilities": [],
+  "permissions": [],
+  "syncedAt": "2026-11-15T10:38:33.008243Z",
+  "security": {
+    "status": "unreviewed",
+    "findings": []
+  },
+  "compatibility": {
+    "status": "unchecked",
+    "notes": [
+      "Template metadata only; runtime activation requires host validation."
+    ]
+  }
+}

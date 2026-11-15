@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "name": "technical-seo-triage",
+  "version": "1.0.0",
+  "source": {
+    "url": "https://github.com/milind-soni/openmausbot-teams/blob/c45cc3c4c88db8bfc125a691553d448141d735f9/teams/seo-growth/skills/technical-seo-triage/SKILL.md",
+    "commit": "c45cc3c4c88db8bfc125a691553d448141d735f9",
+    "sha256": "aed7b4912bafbcf6f74170c94ad1c7f24f5fd1290e048af7a47edc1ab7c44910",
+    "license": "MIT"
+  },
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "vietnamese": {
+    "description": "Biến dữ liệu thu thập và lập chỉ mục thành phát hiện kỹ thuật có thể tái lập, xếp theo mức nghiêm trọng.",
+    "aliases": [
+      "Chẩn đoán SEO kỹ thuật"
+    ],
+    "keywords": [
+      "kiểm tra SEO kỹ thuật",
+      "lỗi lập chỉ mục",
+      "thu thập dữ liệu",
+      "canonical",
+      "sitemap"
+    ],
+    "examples": [
+      "Kiểm tra bằng chứng Search Console này và ưu tiên lỗi lập chỉ mục cần sửa."
+    ],
+    "guide": "references/guide.vi.md",
+    "sourceSha256": "aed7b4912bafbcf6f74170c94ad1c7f24f5fd1290e048af7a47edc1ab7c44910"
+  },
+  "requiredCapabilities": [],
+  "permissions": [],
+  "syncedAt": "2026-11-15T10:38:33.008243Z",
+  "security": {
+    "status": "unreviewed",
+    "findings": []
+  },
+  "compatibility": {
+    "status": "unchecked",
+    "notes": [
+      "Template metadata only; runtime activation requires host validation."
+    ]
+  }
+}

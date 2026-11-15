@@ -46,6 +46,29 @@
           "GitHub"
         ]
       }
+    },
+    {
+      "slug": "seo-growth",
+      "name": "Tìm cơ hội tăng trưởng SEO",
+      "summary": "Phân tích bằng chứng tìm kiếm, chẩn đoán vấn đề kỹ thuật và lập kế hoạch nội dung có người phụ trách, mức ưu tiên và cách đo kết quả.",
+      "category": "Tiếp thị",
+      "outcome": "Xếp hạng cơ hội tìm kiếm theo tác động, độ tin cậy và công sức",
+      "setupMinutes": 5,
+      "featured": true,
+      "package": "packages/seo-growth.md",
+      "manifest": "teams/seo-growth/seo-growth.mausteam.json",
+      "readme": "teams/seo-growth/README.md",
+      "members": 4,
+      "skills": [
+        "teams/seo-growth/skills/keyword-opportunity-map/SKILL.md",
+        "teams/seo-growth/skills/technical-seo-triage/SKILL.md",
+        "teams/seo-growth/skills/content-brief/SKILL.md"
+      ],
+      "requires": {
+        "apps": [
+          "Google Sheets"
+        ]
+      }
     }
   ],
   "bots": [
