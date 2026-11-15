@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "name": "lead-follow-up",
+  "version": "1.0.0",
+  "source": {
+    "url": "https://github.com/milind-soni/openmausbot-teams/blob/c45cc3c4c88db8bfc125a691553d448141d735f9/packages/grok-househackerjon.md",
+    "commit": "c45cc3c4c88db8bfc125a691553d448141d735f9",
+    "sha256": "4d1372064dbaed1d7a5f4a9426c069287c96079fe7d747f2a0ef419dea9fa8fb",
+    "license": "MIT"
+  },
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "vietnamese": {
+    "description": "Soạn phản hồi cho khách hàng tiềm năng và khách hiện tại dựa trên hội thoại thật, bảng giá và cam kết đã được cung cấp.",
+    "aliases": [
+      "Soạn tin nhắn chăm sóc khách hàng"
+    ],
+    "keywords": [
+      "soạn phản hồi khách hàng",
+      "theo dõi khách hàng tiềm năng",
+      "xác nhận thời gian trống",
+      "nhắc báo giá",
+      "trả lời yêu cầu mới"
+    ],
+    "examples": [
+      "Soạn thư trả lời khách hàng dựa trên hội thoại, bảng giá và quy tắc báo giá tôi đã cung cấp; không gửi."
+    ],
+    "guide": "references/guide.vi.md",
+    "sourceSha256": "4d1372064dbaed1d7a5f4a9426c069287c96079fe7d747f2a0ef419dea9fa8fb"
+  },
+  "requiredCapabilities": [],
+  "permissions": [],
+  "syncedAt": "2026-11-15T22:23:57.205022Z",
+  "security": {
+    "status": "unreviewed",
+    "findings": []
+  },
+  "compatibility": {
+    "status": "unchecked",
+    "notes": [
+      "Converted from the verbatim English package playbook; runtime activation requires host validation."
+    ]
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "name": "work-order-intake",
+  "version": "1.0.0",
+  "source": {
+    "url": "https://github.com/milind-soni/openmausbot-teams/blob/c45cc3c4c88db8bfc125a691553d448141d735f9/packages/grok-househackerjon.md",
+    "commit": "c45cc3c4c88db8bfc125a691553d448141d735f9",
+    "sha256": "7ccdbd76c1eb0cba79df201e324258f5eb8e61c9f320d5aaa388dbfae82e7178",
+    "license": "MIT"
+  },
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "vietnamese": {
+    "description": "Gom yêu cầu công việc từ các kênh vào một hàng đợi, đối chiếu năng lực đội thợ và chuẩn bị lịch chờ duyệt.",
+    "aliases": [
+      "Tiếp nhận và chuẩn bị lịch công việc"
+    ],
+    "keywords": [
+      "tiếp nhận yêu cầu sửa chữa",
+      "xem việc mới hôm nay",
+      "lập lịch đội thợ",
+      "chuẩn bị đặt lịch",
+      "yêu cầu công việc mới"
+    ],
+    "examples": [
+      "Tổng hợp yêu cầu sửa chữa mới, đề xuất lịch theo giờ làm đã ghi và để mọi đặt lịch chờ tôi duyệt."
+    ],
+    "guide": "references/guide.vi.md",
+    "sourceSha256": "7ccdbd76c1eb0cba79df201e324258f5eb8e61c9f320d5aaa388dbfae82e7178"
+  },
+  "requiredCapabilities": [],
+  "permissions": [],
+  "syncedAt": "2026-11-15T22:23:57.205022Z",
+  "security": {
+    "status": "unreviewed",
+    "findings": []
+  },
+  "compatibility": {
+    "status": "unchecked",
+    "notes": [
+      "Converted from the verbatim English package playbook; runtime activation requires host validation."
+    ]
+  }
+}

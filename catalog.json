@@ -69,6 +69,32 @@
           "Google Sheets"
         ]
       }
+    },
+    {
+      "slug": "grok-househackerjon",
+      "name": "Nhận thêm việc, giảm chi phí phần mềm",
+      "summary": "Tiếp nhận việc cần làm, lập lịch cho đội thợ và soạn phản hồi khách hàng để bạn duyệt trước khi gửi hoặc đặt lịch.",
+      "category": "Vận hành",
+      "outcome": "Tiếp nhận yêu cầu, chuẩn bị đề xuất lịch và soạn phản hồi để người dùng duyệt.",
+      "setupMinutes": 8,
+      "featured": false,
+      "package": "packages/grok-househackerjon.md",
+      "manifest": "teams/grok-househackerjon/grok-househackerjon.mausteam.json",
+      "readme": "teams/grok-househackerjon/README.md",
+      "members": 4,
+      "skills": [
+        "teams/grok-househackerjon/skills/work-order-intake/SKILL.md",
+        "teams/grok-househackerjon/skills/lead-follow-up/SKILL.md"
+      ],
+      "requires": {
+        "apps": [
+          "Gmail",
+          "Slack",
+          "ServiceTitan",
+          "Quo",
+          "Cổng khách hàng"
+        ]
+      }
     }
   ],
   "bots": [

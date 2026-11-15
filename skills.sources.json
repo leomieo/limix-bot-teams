@@ -66,6 +66,22 @@
       "sourceSha256": "e8b860d737ae02e01f28d354cf3337af43fc41aa86fdb4f5de3a136a4dadf470",
       "coreSha256": "e8b860d737ae02e01f28d354cf3337af43fc41aa86fdb4f5de3a136a4dadf470",
       "mode": "verbatim"
+    },
+    {
+      "team": "grok-househackerjon",
+      "name": "work-order-intake",
+      "sourcePath": "packages/grok-househackerjon.md",
+      "sourceSha256": "ca7198203f0b84de1c7648f608053990d633277169a8988c7bd870bce3bcc14d",
+      "coreSha256": "7ccdbd76c1eb0cba79df201e324258f5eb8e61c9f320d5aaa388dbfae82e7178",
+      "mode": "package-playbook"
+    },
+    {
+      "team": "grok-househackerjon",
+      "name": "lead-follow-up",
+      "sourcePath": "packages/grok-househackerjon.md",
+      "sourceSha256": "ca7198203f0b84de1c7648f608053990d633277169a8988c7bd870bce3bcc14d",
+      "coreSha256": "4d1372064dbaed1d7a5f4a9426c069287c96079fe7d747f2a0ef419dea9fa8fb",
+      "mode": "package-playbook"
     }
   ]
 }

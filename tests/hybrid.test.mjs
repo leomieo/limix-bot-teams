@@ -18,7 +18,7 @@ const entries = lock.skills.map((entry) => {
 });
 
 test('catalog paths resolve and each team has one canonical skill directory per entry', () => {
-  assert.equal(entries.length, 8);
+  assert.equal(entries.length, 10);
   for (const team of catalog.teams) {
     const expected = entries.filter((entry) => entry.team === team.slug);
     assert.deepEqual(team.skills.sort(), expected.map((entry) => `${entry.path}/SKILL.md`).sort());
@@ -85,6 +85,31 @@ test('SEO template preserves roles, room rules, routine approval and English pla
     assert.equal(localizedPlaybook.instructions, playbook.instructions);
     for (const trigger of playbook.triggers) assert.ok(localizedPlaybook.triggers.includes(trigger));
   }
+});
+test('Grok HouseHackerJon keeps its approval gates, roles, English playbooks and evidence caveats', { skip: !app || !upstream }, async () => {
+  const require = createRequire(join(app, 'package.json'));
+  const { parse } = require('yaml');
+  const metadata = (text) => parse(text.split(/^---\r?$/m)[1]);
+  const original = metadata(execFileSync('git', ['-C', upstream, 'show', `${lock.commit}:packages/grok-househackerjon.md`], { encoding: 'utf8' }));
+  const localized = metadata(read('packages/grok-househackerjon.md'));
+  const team = JSON.parse(read('teams/grok-househackerjon/grok-househackerjon.mausteam.json')).team;
+  assert.equal(localized.chiefOfStaff, original.chiefOfStaff);
+  assert.equal(localized.proof.amount, original.proof.amount);
+  assert.equal(localized.proof.source.url, original.proof.source.url);
+  for (const agent of original.agents) {
+    const localizedAgent = localized.agents.find((entry) => entry.key === agent.key);
+    const member = team.members.find((entry) => entry.key === agent.key);
+    assert.equal(localizedAgent.soul, agent.description);
+    assert.equal(member.soul, agent.description);
+    assert.deepEqual(localizedAgent.playbooks, agent.playbooks);
+  }
+  for (const playbook of original.playbooks) {
+    const localizedPlaybook = localized.playbooks.find((entry) => entry.key === playbook.key);
+    assert.equal(localizedPlaybook.instructions, playbook.instructions);
+    for (const trigger of playbook.triggers) assert.ok(localizedPlaybook.triggers.includes(trigger));
+  }
+  assert.match(localized.playbooks[0].instructions, /Take no channel actions of any kind/);
+  assert.match(localized.playbooks[1].instructions, /explicit approval of that specific message/);
 });
 test('Limix parsers accept every core, sidecar, catalog and BotMRR package', { skip: !app }, async () => {
   const load = (path) => import(pathToFileURL(join(app, path)).href);
