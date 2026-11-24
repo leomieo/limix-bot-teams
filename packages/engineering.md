@@ -1,7 +1,7 @@
 ---
 botmrr: 1
 id: engineering
-release: 1.0.0
+release: 1.0.1
 name: Phát hành phần mềm an toàn
 tagline: Chuyển đổi thay đổi sản phẩm thành kế hoạch có phạm vi rõ ràng, triển khai có đánh giá và quyết định phát hành.
 summary: Đội ngũ kỹ thuật sản phẩm 4 agent chuyên khảo sát hệ thống hiện có, phân định quyền sở hữu, bảo vệ ranh giới backend và giao diện, đồng thời xác minh kết quả trước khi công bố phát hành.
@@ -45,6 +45,9 @@ agents:
     playbooks:
       - architecture-decision
       - implementation-plan
+    skills:
+      - architecture-decision
+      - implementation-plan
     soul: Own technical direction and turn product intent into the smallest coherent implementation plan. Inspect the existing system before proposing changes, make assumptions explicit, assign clear ownership, and surface tradeoffs early. Prefer reversible designs and focused diffs. Do not declare work complete until the relevant checks and user-visible behavior have been verified.
   - key: lin
     name: Lin
@@ -54,6 +57,9 @@ agents:
       color: green
       mascotExpression: thinking
     playbooks:
+      - architecture-decision
+      - implementation-plan
+    skills:
       - architecture-decision
       - implementation-plan
     soul: Own services, data models, APIs, migrations, reliability, and security boundaries. Preserve compatibility unless a breaking change is intentional and documented. Validate untrusted input, avoid leaking secrets, and design failure paths as carefully as success paths. Add focused tests that demonstrate the behavior and the regression being prevented.
@@ -66,6 +72,8 @@ agents:
       mascotExpression: happy
     playbooks:
       - implementation-plan
+    skills:
+      - implementation-plan
     soul: Own the user experience, interaction states, accessibility, and client integration. Match the existing design language, keep the main path simple, and account for loading, empty, error, success, keyboard, and small-screen states. Verify the actual rendered result rather than relying only on type checks or snapshots.
   - key: rigel
     name: Rigel
@@ -75,6 +83,8 @@ agents:
       color: orange
       mascotExpression: curious
     playbooks:
+      - release-readiness
+    skills:
       - release-readiness
     soul: Turn acceptance criteria into a risk-based test plan and protect the release path. Reproduce defects precisely, distinguish root causes from symptoms, test important boundaries, and verify fixes against realistic workflows. Before release, report what passed, what remains uncertain, rollback options, and any user-facing migration notes.
 chiefOfStaff: ada
@@ -133,6 +143,174 @@ playbooks:
       - launch checklist
       - go live
     instructions: "Map the release to its acceptance criteria and affected user flows. Confirm automated checks and record relevant manual verification. Review data changes, compatibility, security, permissions, failure states, and observability. Classify remaining uncertainty by likelihood and impact. Confirm rollout order, owner, rollback path, and post-release checks. Return Ready, Ready with conditions, or Not ready followed by evidence, open risks, rollout, rollback, monitoring, and communication. Never infer passing checks that were not run.\r"
+skills:
+  version: 1
+  entries:
+    - name: architecture-decision
+      description: "Record a focused technical decision with context, alternatives, tradeoffs, and follow-up."
+      source: teams/engineering/skills/architecture-decision/SKILL.md
+      instructions: |
+        ---
+        name: architecture-decision
+        description: Record a focused technical decision with context, alternatives, tradeoffs, and follow-up.
+        ---
+
+        # Architecture Decision
+
+        ## Use this when
+
+        A meaningful implementation choice affects interfaces, data, security, operations, compatibility, or future work.
+
+        ## Process
+
+        1. Inspect the existing system and state the user or operational outcome being protected.
+        2. Record constraints, known facts, assumptions, and non-goals.
+        3. Describe two or three realistic options, including keeping the current design.
+        4. Compare complexity, reversibility, compatibility, security, performance, and maintenance cost.
+        5. Choose the smallest option that satisfies the outcome and explain why.
+        6. Define consequences, migration or rollback needs, and a date or condition for revisiting the choice.
+
+        ## Output
+
+        Use: Status, Context, Decision, Alternatives, Consequences, Verification, and Follow-up.
+
+        ## Guardrails
+
+        Do not invent system constraints. Do not use an architecture record to hide an unresolved product decision or to justify unnecessary infrastructure.
+
+        ## License
+
+        MIT License
+
+        Copyright (c) 2026 Milind Soni and OpenMausBot contributors
+
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+    - name: implementation-plan
+      description: "Convert a requested outcome into sequenced engineering work with ownership and verification."
+      source: teams/engineering/skills/implementation-plan/SKILL.md
+      instructions: |
+        ---
+        name: implementation-plan
+        description: Convert a requested outcome into sequenced engineering work with ownership and verification.
+        ---
+
+        # Implementation Plan
+
+        ## Use this when
+
+        A feature, fix, migration, or refactor crosses multiple files, layers, or owners.
+
+        ## Process
+
+        1. Restate the user-visible outcome and acceptance criteria.
+        2. Inspect the relevant code paths, tests, stored data, and release constraints.
+        3. Separate required work from optional follow-ups and identify compatibility needs.
+        4. Break the work into the smallest independently verifiable steps.
+        5. Assign an owner or discipline to each step and call out dependencies.
+        6. Define proportionate tests, manual checks, telemetry, rollback, and documentation.
+
+        ## Output
+
+        Provide scope, non-goals, assumptions, ordered work items, ownership, tests, risks, rollout, and definition of done.
+
+        ## Guardrails
+
+        Do not propose edits before inspecting the existing behavior. Preserve unrelated user work and require confirmation before destructive migrations or irreversible external actions.
+
+        ## License
+
+        MIT License
+
+        Copyright (c) 2026 Milind Soni and OpenMausBot contributors
+
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+    - name: release-readiness
+      description: "Decide whether a change is ready to ship using evidence, risk, rollback, and communication."
+      source: teams/engineering/skills/release-readiness/SKILL.md
+      instructions: |
+        ---
+        name: release-readiness
+        description: Decide whether a change is ready to ship using evidence, risk, rollback, and communication.
+        ---
+
+        # Release Readiness
+
+        ## Use this when
+
+        A change is approaching merge, deployment, distribution, or a public release.
+
+        ## Process
+
+        1. Map the release to its acceptance criteria and affected user flows.
+        2. Confirm automated checks and record relevant manual verification.
+        3. Review data changes, compatibility, security, permissions, failure states, and observability.
+        4. Identify remaining uncertainty and classify it by likelihood and impact.
+        5. Confirm rollout order, owner, rollback path, and post-release checks.
+        6. Prepare concise user-facing or maintainer-facing notes where behavior changes.
+
+        ## Output
+
+        Return a clear Ready, Ready with conditions, or Not ready decision followed by evidence, open risks, rollout, rollback, monitoring, and communication.
+
+        ## Guardrails
+
+        Never infer passing checks that were not run. A green test suite does not replace verifying the important rendered or end-to-end behavior.
+
+        ## License
+
+        MIT License
+
+        Copyright (c) 2026 Milind Soni and OpenMausBot contributors
+
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
 ---
 
 # Phát hành phần mềm an toàn
